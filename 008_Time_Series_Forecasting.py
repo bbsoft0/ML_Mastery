@@ -10,7 +10,7 @@ from pandas import Grouper
 from pandas import DataFrame
 from matplotlib import pyplot
 from pandas import read_csv
-series = read_csv('daily-births.csv', header=0, index_col=0)
+series = read_csv('./inputMastery/daily-births.csv', header=0, index_col=0)
 
 # Explore
 print(series.head())
@@ -18,14 +18,14 @@ print(series.size)
 print(series.describe())
 
 # Lesson 03: Data Visualization
-series = read_csv('shampoo-sales.csv', header=0, index_col=0)
+series = read_csv('./inputMastery/shampoo-sales.csv', header=0, index_col=0)
 series.plot(style='k.')
 pyplot.show()
 
 series.hist()
 pyplot.show()
 
-series = read_csv('daily-births.csv', header=0,
+series = read_csv('./inputMastery/daily-births.csv', header=0,
                   index_col=0, parse_dates=True, squeeze=True)
 groups = series.groupby(Grouper(freq='A'))
 years = DataFrame()
@@ -35,7 +35,7 @@ years = years.T
 pyplot.matshow(years, interpolation=None, aspect='auto')
 pyplot.show()
 
-series = read_csv('shampoo-sales.csv', header=0,
+series = read_csv('./inputMastery/shampoo-sales.csv', header=0,
                   index_col=0, parse_dates=True, squeeze=True)
 autocorrelation_plot(series)
 pyplot.show()
@@ -47,7 +47,7 @@ def parser(x):
     return datetime.strptime('190'+x, '%Y-%m')
 
 
-series = read_csv('shampoo-sales.csv', header=0,
+series = read_csv('./inputMastery/shampoo-sales.csv', header=0,
                   parse_dates=[0], index_col=0, squeeze=True, date_parser=parser)
 # Create lagged dataset
 values = DataFrame(series.values)
@@ -86,7 +86,7 @@ pyplot.show()
 # Lesson 05: Autoregressive Forecast Model
 # create and evaluate an updated autoregressive model
 # load dataset
-series = read_csv('daily-min-temperatures.csv', header=0,
+series = read_csv('./inputMastery/daily-min-temperatures.csv', header=0,
                   index_col=0, parse_dates=True, squeeze=True)
 # split dataset
 X = series.values
@@ -126,7 +126,7 @@ def parser(x):
     return datetime.strptime('190'+x, '%Y-%m')
 
 
-series = read_csv('shampoo-sales.csv', header=0, index_col=0,
+series = read_csv('./inputMastery/shampoo-sales.csv', header=0, index_col=0,
                   parse_dates=True, squeeze=True, date_parser=parser)
 series.index = series.index.to_period('M')
 # fit model
@@ -152,7 +152,7 @@ def parser(x):
     return datetime.strptime('190'+x, '%Y-%m')
 
 
-series = read_csv('shampoo-sales.csv', header=0, index_col=0,
+series = read_csv('./inputMastery/shampoo-sales.csv', header=0, index_col=0,
                   parse_dates=True, squeeze=True, date_parser=parser)
 series.index = series.index.to_period('M')
 # split into train and test sets

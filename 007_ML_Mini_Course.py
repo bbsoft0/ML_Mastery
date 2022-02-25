@@ -25,14 +25,14 @@ mydataframe = pandas.DataFrame(myarray, index=rownames, columns=colnames)
 print(mydataframe)
 
 # Load CSV using Pandas from URL
-url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.data.csv"
+url = "./inputMastery/pima-indians-diabetes.csv"
 names = ['preg', 'plas', 'pres', 'skin',
          'test', 'mass', 'pedi', 'age', 'class']
 data = pandas.read_csv(url, names=names)
 print(data.shape)
 
 # Statistical Summary
-url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.data.csv"
+url = "./inputMastery/pima-indians-diabetes.csv"
 names = ['preg', 'plas', 'pres', 'skin',
          'test', 'mass', 'pedi', 'age', 'class']
 data = pandas.read_csv(url, names=names)
@@ -40,7 +40,7 @@ description = data.describe()
 print(description)
 
 # Scatter Plot Matrix
-url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.data.csv"
+url = "./inputMastery/pima-indians-diabetes.csv"
 names = ['preg', 'plas', 'pres', 'skin',
          'test', 'mass', 'pedi', 'age', 'class']
 data = pandas.read_csv(url, names=names)
@@ -48,7 +48,7 @@ scatter_matrix(data)
 plt.show()
 
 # Standardize data (0 mean, 1 stdev)
-url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.data.csv"
+url = "./inputMastery/pima-indians-diabetes.csv"
 names = ['preg', 'plas', 'pres', 'skin',
          'test', 'mass', 'pedi', 'age', 'class']
 dataframe = pandas.read_csv(url, names=names)
@@ -63,7 +63,7 @@ numpy.set_printoptions(precision=3)
 print(rescaledX[0:5, :])
 
 # Evaluate using Cross Validation
-url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.data.csv"
+url = "./inputMastery/pima-indians-diabetes.csv"
 names = ['preg', 'plas', 'pres', 'skin',
          'test', 'mass', 'pedi', 'age', 'class']
 dataframe = read_csv(url, names=names)
@@ -77,7 +77,7 @@ print("Accuracy: %.3f%% (%.3f%%)" %
       (results.mean()*100.0, results.std()*100.0))
 
 # Cross Validation Classification LogLoss
-url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.data.csv"
+url = "./inputMastery/pima-indians-diabetes.csv"
 names = ['preg', 'plas', 'pres', 'skin',
          'test', 'mass', 'pedi', 'age', 'class']
 dataframe = read_csv(url, names=names)
@@ -106,7 +106,7 @@ print(results.mean())
 
 # Compare Algorithms
 # load dataset
-url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.data.csv"
+url = "./inputMastery/pima-indians-diabetes.csv"
 names = ['preg', 'plas', 'pres', 'skin',
          'test', 'mass', 'pedi', 'age', 'class']
 dataframe = read_csv(url, names=names)
@@ -130,7 +130,7 @@ for name, model in models:
     print(msg)
 
 # Grid Search for Algorithm Tuning
-url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.data.csv"
+url = "./inputMastery/pima-indians-diabetes.csv"
 names = ['preg', 'plas', 'pres', 'skin',
          'test', 'mass', 'pedi', 'age', 'class']
 dataframe = read_csv(url, names=names)
@@ -146,7 +146,7 @@ print(grid.best_score_)
 print(grid.best_estimator_.alpha)
 
 # Random Forest Classification
-url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.data.csv"
+url = "./inputMastery/pima-indians-diabetes.csv"
 names = ['preg', 'plas', 'pres', 'skin',
          'test', 'mass', 'pedi', 'age', 'class']
 dataframe = read_csv(url, names=names)
@@ -162,7 +162,7 @@ results = cross_val_score(model, X, Y, cv=kfold)
 print(results.mean())
 
 # Save Model Using Pickle
-url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.data.csv"
+url = "./inputMastery/pima-indians-diabetes.csv"
 names = ['preg', 'plas', 'pres', 'skin',
          'test', 'mass', 'pedi', 'age', 'class']
 dataframe = read_csv(url, names=names)

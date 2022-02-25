@@ -1,5 +1,5 @@
 ############################################################
-# Time Series End to End Project JOKER
+# Time Series End to End Project
 ############################################################
 
 # 01. Environment
@@ -23,22 +23,22 @@ import numpy
 import scipy
 
 # 02. Problem Description
-# predict the j number for lottery.
+# predict the number of monthly sales of champagne for the Perrin Freres label (named for a region in France).
 
 # 03. Test Harness
 # develop a test harness to investigate the data and evaluate candidate models.
 # 03.1 Validation Dataset
-# we will withhold the last one year of data from analysis and model selection.
+# we will pretend that it is September 1971 and withhold the last one year of data from analysis and model selection.
 # This final year of data will be used to validate the final model.
 # separate out a validation dataset
 from pandas import read_csv
-series = read_csv('joker.csv', header=0, index_col=0,
+series = read_csv('./inputMastery/champagne.csv', header=0, index_col=0,
                   parse_dates=True, squeeze=True)
-split_point = len(series) - 100
+split_point = len(series) - 12
 dataset, validation = series[0:split_point], series[split_point:]
 print('Dataset %d, Validation %d' % (len(dataset), len(validation)))
-dataset.to_csv('dataset.csv', header=False)
-validation.to_csv('validation.csv', header=False)
+dataset.to_csv('./inputMastery/dataset.csv', header=False)
+validation.to_csv('./inputMastery/validation.csv', header=False)
 # 03.2 Model Evaluation
 # 03.2.1 Performance Measure
 # 03.2.2 Test Strategy
@@ -46,7 +46,7 @@ validation.to_csv('validation.csv', header=False)
 # 04. Persistence
 # The baseline prediction for time series forecasting is called the naive forecast, or persistence.
 # load data
-series = read_csv('dataset.csv', header=None, index_col=0,
+series = read_csv('./inputMastery/dataset.csv', header=None, index_col=0,
                   parse_dates=True, squeeze=True)
 # prepare data
 X = series.values
@@ -71,19 +71,19 @@ print('RMSE: %.3f' % rmse)
 
 # 05. Data Analysis
 # 05.1 Summary Statistics
-series = read_csv('dataset.csv', header=None, index_col=0,
+series = read_csv('./inputMastery/dataset.csv', header=None, index_col=0,
                   parse_dates=True, squeeze=True)
 print(series.describe())
 # 05.2 Line Plot
-series = read_csv('dataset.csv', header=None, index_col=0,
+series = read_csv('./inputMastery/dataset.csv', header=None, index_col=0,
                   parse_dates=True, squeeze=True)
 series.plot()
 pyplot.show()
 
 # 05.3 Seasonal Line Plots
-series = read_csv('dataset.csv', header=None, index_col=0,
+series = read_csv('./inputMastery/dataset.csv', header=None, index_col=0,
                   parse_dates=True, squeeze=True)
-groups = series['2016':'2020'].groupby(Grouper(freq='A'))
+groups = series['1964':'1970'].groupby(Grouper(freq='A'))
 years = DataFrame()
 pyplot.figure()
 i = 1
@@ -95,7 +95,7 @@ for name, group in groups:
 pyplot.show()
 
 # 05.4 Density Plot
-series = read_csv('dataset.csv', header=None, index_col=0,
+series = read_csv('./inputMastery/dataset.csv', header=None, index_col=0,
                   parse_dates=True, squeeze=True)
 pyplot.figure(1)
 pyplot.subplot(211)
@@ -104,20 +104,15 @@ pyplot.subplot(212)
 series.plot(kind='kde')
 pyplot.show()
 
-
 # 05.5 Box and Whisker Plots
-""" series = read_csv('dataset.csv', header=None, index_col=0,
+series = read_csv('./inputMastery/dataset.csv', header=None, index_col=0,
                   parse_dates=True, squeeze=True)
-groups = series['2016':'2020'].groupby(Grouper(freq='A'))
+groups = series['1964':'1970'].groupby(Grouper(freq='A'))
 years = DataFrame()
 for name, group in groups:
-    new_group = group.values
-    if (years.size > 0) and (years.size < group.values.size):
-        new_group = numpy.delete(
-            group.values, list(range(years.size, group.values.size)), axis=None)
-    years[name.year] = new_group
+    years[name.year] = group.values
 years.boxplot()
-pyplot.show() """
+pyplot.show()
 
 # 06. ARIMA Models
 # 06.1 Manually Configured ARIMA
@@ -133,7 +128,7 @@ def difference(dataset, interval=1):
     return Series(diff)
 
 
-series = read_csv('dataset.csv', header=None, index_col=0,
+series = read_csv('./inputMastery/dataset.csv', header=None, index_col=0,
                   parse_dates=True, squeeze=True)
 X = series.values
 X = X.astype('float32')
@@ -149,11 +144,11 @@ print('Critical Values:')
 for key, value in result[4].items():
     print('\t%s: %.3f' % (key, value))
 # save
-stationary.to_csv('stationary.csv', header=False)
+stationary.to_csv('./inputMastery/stationary.csv', header=False)
 # plot
 stationary.plot()
 pyplot.show()
-# The results show that the test statistic value -7.5 is smaller than the critical value at 1% of -3.515. This suggests that we can reject the null hypothesis with a significance level of less than 1% (i.e. a low probability that the result is a statistical fluke).
+# The results show that the test statistic value -7.134898 is smaller than the critical value at 1% of -3.515. This suggests that we can reject the null hypothesis with a significance level of less than 1% (i.e. a low probability that the result is a statistical fluke).
 # Rejecting the null hypothesis means that the process has no unit root, and in turn that the time series is stationary or does not have time-dependent structure.
 
 # evaluate manually configured ARIMA model
@@ -176,7 +171,7 @@ def inverse_difference(history, yhat, interval=1):
 
 
 # load data
-series = read_csv('dataset.csv', header=None, index_col=0,
+series = read_csv('./inputMastery/dataset.csv', header=None, index_col=0,
                   parse_dates=True, squeeze=True)
 # prepare data
 X = series.values
@@ -210,8 +205,7 @@ print('RMSE: %.3f' % rmse)
 # create a differenced series
 # This takes a long time, commented out
 
-""" 
-def difference(dataset, interval=1):
+""" def difference(dataset, interval=1):
     diff = list()
     for i in range(interval, len(dataset)):
         value = dataset[i] - dataset[i - interval]
@@ -267,20 +261,18 @@ def evaluate_models(dataset, p_values, d_values, q_values):
                 except:
                     continue
     print('Best ARIMA%s RMSE=%.3f' % (best_cfg, best_score))
- """
 
-# load dataset
-""" 
-series = read_csv('dataset.csv', header=None, index_col=0,
-                  parse_dates=True, squeeze=True)
-# evaluate parameters
-p_values = range(0, 7)
-d_values = range(0, 3)
-q_values = range(0, 7)
-warnings.filterwarnings("ignore")
-evaluate_models(series.values, p_values, d_values, q_values)
  """
-# 5 We will select this ARIMA(0, 0, 6) RMSE=8.125 model going forward.
+# load dataset
+# series = read_csv('./inputMastery/dataset.csv', header=None, index_col=0,
+#                  parse_dates=True, squeeze=True)
+# evaluate parameters
+#p_values = range(0, 7)
+#d_values = range(0, 3)
+#q_values = range(0, 7)
+# warnings.filterwarnings("ignore")
+#evaluate_models(series.values, p_values, d_values, q_values)
+# We will select this ARIMA(0, 0, 1) model going forward.
 
 # 06.3 Review Residual Errors
 # summarize ARIMA forecast residuals
@@ -303,7 +295,7 @@ def inverse_difference(history, yhat, interval=1):
 
 
 # load data
-series = read_csv('dataset.csv', header=None, index_col=0,
+series = read_csv('./inputMastery/dataset.csv', header=None, index_col=0,
                   parse_dates=True, squeeze=True)
 # prepare data
 X = series.values
@@ -318,7 +310,7 @@ for i in range(len(test)):
     months_in_year = 12
     diff = difference(history, months_in_year)
     # predict
-    model = ARIMA(diff, order=(0, 0, 6))
+    model = ARIMA(diff, order=(0, 0, 1))
     model_fit = model.fit()
     yhat = model_fit.forecast()[0]
     yhat = inverse_difference(history, yhat, months_in_year)
@@ -337,9 +329,9 @@ residuals.hist(ax=pyplot.gca())
 pyplot.subplot(212)
 residuals.plot(kind='kde', ax=pyplot.gca())
 pyplot.show()
-# We can see that the distribution has a right shift and that the mean is non-zero at 0.19.
+# We can see that the distribution has a right shift and that the mean is non-zero at 165.904728.
 # This is perhaps a sign that the predictions are biased.
-# We could use this information to bias-correct predictions by adding the mean residual error of 0.19 to each forecast made.
+# We could use this information to bias-correct predictions by adding the mean residual error of 165.904728 to each forecast made.
 # plots of residual errors of bias corrected forecasts
 
 # create a differenced series
@@ -360,7 +352,7 @@ def inverse_difference(history, yhat, interval=1):
 
 
 # load data
-series = read_csv('dataset.csv', header=None, index_col=0,
+series = read_csv('./inputMastery/dataset.csv', header=None, index_col=0,
                   parse_dates=True, squeeze=True)
 # prepare data
 X = series.values
@@ -370,13 +362,13 @@ train, test = X[0:train_size], X[train_size:]
 # walk-forward validation
 history = [x for x in train]
 predictions = list()
-bias = 0.195800
+bias = 165.904728
 for i in range(len(test)):
     # difference data
     months_in_year = 12
     diff = difference(history, months_in_year)
     # predict
-    model = ARIMA(diff, order=(0, 0, 6))
+    model = ARIMA(diff, order=(0, 0, 1))
     model_fit = model.fit()
     yhat = model_fit.forecast()[0]
     yhat = bias + inverse_difference(history, yhat, months_in_year)
@@ -420,7 +412,7 @@ def inverse_difference(history, yhat, interval=1):
 
 
 # load data
-series = read_csv('dataset.csv', header=None, index_col=0,
+series = read_csv('./inputMastery/dataset.csv', header=None, index_col=0,
                   parse_dates=True, squeeze=True)
 # prepare data
 X = series.values
@@ -435,7 +427,7 @@ for i in range(len(test)):
     months_in_year = 12
     diff = difference(history, months_in_year)
     # predict
-    model = ARIMA(diff, order=(0, 0, 6))
+    model = ARIMA(diff, order=(0, 0, 1))
     model_fit = model.fit()
     yhat = model_fit.forecast()[0]
     yhat = inverse_difference(history, yhat, months_in_year)
@@ -472,7 +464,7 @@ def difference(dataset, interval=1):
 
 
 # load data
-series = read_csv('dataset.csv', header=None, index_col=0,
+series = read_csv('./inputMastery/dataset.csv', header=None, index_col=0,
                   parse_dates=True, squeeze=True)
 # prepare data
 X = series.values
@@ -481,10 +473,10 @@ X = X.astype('float32')
 months_in_year = 12
 diff = difference(X, months_in_year)
 # fit model
-model = ARIMA(diff, order=(0, 0, 6))
+model = ARIMA(diff, order=(0, 0, 1))
 model_fit = model.fit()
 # bias constant, could be calculated from in-sample mean residual
-bias = 0.195800
+bias = 165.904728
 # save model
 model_fit.save('model.pkl')
 numpy.save('model_bias.npy', [bias])
@@ -499,7 +491,7 @@ def inverse_difference(history, yhat, interval=1):
     return yhat + history[-interval]
 
 
-series = read_csv('dataset.csv', header=None, index_col=0,
+series = read_csv('./inputMastery/dataset.csv', header=None, index_col=0,
                   parse_dates=True, squeeze=True)
 months_in_year = 12
 model_fit = ARIMAResults.load('model.pkl')
@@ -528,14 +520,13 @@ def inverse_difference(history, yhat, interval=1):
     return yhat + history[-interval]
 
 
-print("==========VALIDATE MODEL==============")
 # load and prepare datasets
-dataset = read_csv('dataset.csv', header=None, index_col=0,
+dataset = read_csv('./inputMastery/dataset.csv', header=None, index_col=0,
                    parse_dates=True, squeeze=True)
 X = dataset.values.astype('float32')
 history = [x for x in X]
 months_in_year = 12
-validation = read_csv('validation.csv', header=None,
+validation = read_csv('./inputMastery/validation.csv', header=None,
                       index_col=0, parse_dates=True, squeeze=True)
 y = validation.values.astype('float32')
 # load model
@@ -554,7 +545,7 @@ for i in range(1, len(y)):
     months_in_year = 12
     diff = difference(history, months_in_year)
     # predict
-    model = ARIMA(diff, order=(0, 0, 6))
+    model = ARIMA(diff, order=(0, 0, 1))
     model_fit = model.fit()
     yhat = model_fit.forecast()[0]
     yhat = bias + inverse_difference(history, yhat, months_in_year)

@@ -10,7 +10,7 @@ from xgboost import XGBClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 # load data
-dataset = loadtxt('pima-indians-diabetes.csv', delimiter=",")
+dataset = loadtxt('./inputMastery/pima-indians-diabetes.csv', delimiter=",")
 # split data into X and y
 X = dataset[:, 0:8]
 Y = dataset[:, 8]
@@ -33,7 +33,7 @@ print("Accuracy: %.2f%%" % (accuracy * 100.0))
 # Monitor Performance and Early Stopping
 # exmaple of early stopping
 # load data
-dataset = loadtxt('pima-indians-diabetes.csv', delimiter=",")
+dataset = loadtxt('./inputMastery/pima-indians-diabetes.csv', delimiter=",")
 # split data into X and y
 X = dataset[:, 0:8]
 Y = dataset[:, 8]
@@ -57,7 +57,7 @@ print("Accuracy: %.2f%%" % (accuracy * 100.0))
 # Feature Importance with XGBoost
 # plot feature importance using built-in function
 # load data
-dataset = loadtxt('pima-indians-diabetes.csv', delimiter=",")
+dataset = loadtxt('./inputMastery/pima-indians-diabetes.csv', delimiter=",")
 # split data into X and y
 X = dataset[:, 0:8]
 y = dataset[:, 8]
@@ -74,7 +74,7 @@ pyplot.show()
 # XGBoost Hyperparameter Tuning
 # Tune learning_rate
 # load data
-dataset = loadtxt('pima-indians-diabetes.csv', delimiter=",")
+dataset = loadtxt('./inputMastery/pima-indians-diabetes.csv', delimiter=",")
 # split data into X and y
 X = dataset[:, 0:8]
 Y = dataset[:, 8]
