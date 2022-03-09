@@ -19,27 +19,23 @@ The courses structure is as follows:
 
 ## Kaggle
 
-1. [Hello, Python](python/01-syntax-variables-and-numbers.ipynb)  
-A quick introduction to Python syntax, variable assignment, and numbers.
+1. [Python Basics](./P01_Python_Basics.py)  
+Functions, Lists, Strings and Dictionaries
 
-2. [Functions and Getting Help](python/02-functions-and-getting-help.ipynb)  
-Calling functions and defining our own, and using Python's builtin documentation.
+2. [Guessing](./P02_Guessing.py)  
+Guessing the number - User has to guess the number picked by computer
 
-3. [Booleans and Conditionals](python/03-booleans-and-conditionals.ipynb)  
-Using booleans for branching logic.
+3. [Age](./P03_Age.py)  
+User introduces age (can be decimal) and gets the age in seconds
 
-4. [Lists and Tuples](python/04-lists.ipynb)  
-Lists and the things you can do with them. Includes indexing, slicing and mutating.
+4. [PriceOfAChair](./P04_PriceOfAChair.py)  
+BeautifulSoup used to download a page and then individual data is obtained from the page
 
-5. [Loops and List Comprehensions](python/05-loops-and-list-comprehensions.ipynb)  
-For and while loops, and a much-loved Python feature: list comprehensions.
+5. [RandomNumbers](./P05_RandomNumbers.py)  
+Uses numpy pseudorandom number generator to generate random numbers between 1...45, 1...20
 
-6. [Strings and Dictionaries](python/06-strings-and-dictionaries.ipynb)  
-Working with strings and dictionaries, two fundamental Python data types.
-
-7. [Working with External Libraries](python/07-working-with-external-libraries.ipynb)  
-Imports, operator overloading, and survival tips for venturing into the world of external libraries.
-
+6. [Dictionary](./P06_Dictionary.py)  
+Interactive dictionary - uses data.json and displays information about the words introduced.
 
 ## Machine Learning Mastery
 
