@@ -7,33 +7,17 @@ In this repository, the Kaggle learn course tutorial and excerses nootbooks(.ipy
 The Kaggle datasets are avalable in the inputKaggle folder.
 The Mastery datasets are avalable in the inputMastery folder.
 The courses structure is as follows:
-# Kaggle Courses
+# Complete Courses
 
 <!-- TOC -->
 
-- [Python](#python)
-- [Intro to Machine Learning](#intro-to-machine-learning)
-- [Intermediate Machine Learning](#intermediate-machine-learning)
-- [Pandas](#pandas)
-- [Data Visualization](#data-visualization)
-- [Feature Engineering](#feature-engineering)
-- [Data Cleaning](#data-cleaning)
-- [Intro to SQL](#intro-to-sql)
-- [Advanced SQL](#advanced-sql)
-- [Intro to AI Ethics](#intro-to-ai-ethics)
-- [Intro to Deep Learning](#intro-to-deep-learning)
-- [Deep Learning](#deep-learning)
-- [Computer Vision](#computer-vision)
-- [Geospatial Analysis](#geospatial-analysis)
-- [Machine Learning Explainability](#machine-learning-explainability)
-- [Microchallenges](#microchallenges)
-- [Natural Language Processing](#natural-language-processing)
-- [Intro to Game AI and Reinforcement Learning](#intro-to-game-ai-and-reinforcement-learning)
+- [Kaggle Courses](#kaggle)
+- [Machine Learning Mastery](#machine-learning-mastery)
 
 <!-- /TOC -->
 
 
-## Python
+## Kaggle
 
 1. [Hello, Python](python/01-syntax-variables-and-numbers.ipynb)  
 A quick introduction to Python syntax, variable assignment, and numbers.
@@ -57,7 +41,7 @@ Working with strings and dictionaries, two fundamental Python data types.
 Imports, operator overloading, and survival tips for venturing into the world of external libraries.
 
 
-## Intro to Machine Learning
+## Machine Learning Mastery
 
 1. [How Models Work](https://www.kaggle.com/dansbecker/how-models-work)   
 The first step if you're new to machine learning.
