@@ -47,7 +47,16 @@ Interactive dictionary - uses data.json and displays information about the words
 04_z1. [Housing Prices Competition](./04_z1_HousingPricesCompetition.ipynb)  
 Uses the RandomForest model from point 2 to train and generate a submission
 
+04_z2. [Pipelines](./04_z2_pipeline.ipynb)  
+Pipelines are a simple way to keep your data preprocessing and modeling code organized. Specifically, a pipeline bundles preprocessing and modeling steps so you can use the whole bundle as if it were a single step.
+
+04_z3. [XGBoost](./04_z3_xgboost.ipynb)  
+Gradient boosting is a method that goes through cycles to iteratively add models into an ensemble. We use the loss function to fit a new model that will be added to the ensemble. Specifically, we determine model parameters so that adding this new model to the ensemble will reduce the loss.
+
+5.  [Data Vizualization](./05_data_visualization.ipynb)  
+    Seaborn, Line Charts, Scatter Plots, Custom Styles
+
 ## Machine Learning Mastery
 
-1. [Probability](./001_Probability.py)  
-   Gaussian Distribution, Bayes, cross entropy H(P, Q), Naive classifier, Log Loss, Brier score
+1.  [Probability](./001_Probability.py)  
+    Gaussian Distribution, Bayes, cross entropy H(P, Q), Naive classifier, Log Loss, Brier score
