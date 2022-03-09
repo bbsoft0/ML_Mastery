@@ -59,6 +59,21 @@ Gradient boosting is a method that goes through cycles to iteratively add models
 06\_. [Feature Engineering](./06_feature_engineering.ipynb)  
 Features, Clustering with K-Means, Principal Component Analysis
 
+07\_. [Data Cleaning](./07_data_cleaning.ipynb)  
+Features, Clustering with K-Means, Principal Component Analysis
+
+08\_. [Intro to Deep Learning](./08_introDeepLearning.ipynb)  
+Features, Clustering with K-Means, Principal Component Analysis
+
+09\_. [KerasGradient](./09_KerasGradient.ipynb)  
+Features, Clustering with K-Means, Principal Component Analysis
+
+10\_. [KerasUnderfitOverfit](./10_KerasUnderfitOverfit.ipynb)  
+Features, Clustering with K-Means, Principal Component Analysis
+
+11\_. [BinaryClassification](./11_BinaryClassification.ipynb)  
+Features, Clustering with K-Means, Principal Component Analysis
+
 ## Machine Learning Mastery
 
 001\_. [Probability](./001_Probability.py)  
