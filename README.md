@@ -38,11 +38,11 @@ Uses numpy pseudorandom number generator to generate random numbers between 1...
 P06. [Dictionary](./P06_Dictionary.py)  
 Interactive dictionary - uses data.json and displays information about the words introduced.
 
-2.  [Intro To Machine Learning](./02_introML.ipynb)  
-    Starts with DecisionTrees then gets to RandomForest which has the best performance
+02\_. [Intro To Machine Learning](./02_introML.ipynb)  
+ Starts with DecisionTrees then gets to RandomForest which has the best performance
 
-3.  [Pandas](./03_pandas.ipynb)  
-    Uses pandas to read Wine data, describe it, fillna and work with columns
+03\_. [Pandas](./03_pandas.ipynb)  
+ Uses pandas to read Wine data, describe it, fillna and work with columns
 
 04_z1. [Housing Prices Competition](./04_z1_HousingPricesCompetition.ipynb)  
 Uses the RandomForest model from point 2 to train and generate a submission
@@ -53,10 +53,13 @@ Pipelines are a simple way to keep your data preprocessing and modeling code org
 04_z3. [XGBoost](./04_z3_xgboost.ipynb)  
 Gradient boosting is a method that goes through cycles to iteratively add models into an ensemble. We use the loss function to fit a new model that will be added to the ensemble. Specifically, we determine model parameters so that adding this new model to the ensemble will reduce the loss.
 
-5.  [Data Vizualization](./05_data_visualization.ipynb)  
-    Seaborn, Line Charts, Scatter Plots, Custom Styles
+05\_. [Data Vizualization](./05_data_visualization.ipynb)  
+ Seaborn, Line Charts, Custom Styles, Heat Maps
+
+06\_. [Feature Engineering](./06_feature_engineering.ipynb)  
+Features, Clustering with K-Means, Principal Component Analysis
 
 ## Machine Learning Mastery
 
-1.  [Probability](./001_Probability.py)  
-    Gaussian Distribution, Bayes, cross entropy H(P, Q), Naive classifier, Log Loss, Brier score
+001\_. [Probability](./001_Probability.py)  
+ Gaussian Distribution, Bayes, cross entropy H(P, Q), Naive classifier, Log Loss, Brier score
