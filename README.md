@@ -38,41 +38,47 @@ Uses numpy pseudorandom number generator to generate random numbers between 1...
 P06. [Dictionary](./P06_Dictionary.py)  
 Interactive dictionary - uses data.json and displays information about the words introduced.
 
-02\_. [Intro To Machine Learning](./02_introML.ipynb)  
+K02. [Intro To Machine Learning](./K02_introML.ipynb)  
  Starts with DecisionTrees then gets to RandomForest which has the best performance
 
-03\_. [Pandas](./03_pandas.ipynb)  
+K03. [Pandas](./K03_pandas.ipynb)  
  Uses pandas to read Wine data, describe it, fillna and work with columns
 
-04_z1. [Housing Prices Competition](./04_z1_HousingPricesCompetition.ipynb)  
-Uses the RandomForest model from point 2 to train and generate a submission
+K04_z0. [Intermediate Machine Learning](./K04_z0_intermediateML.ipynb)  
+Uses 4 RandomForest models from point 2 to train , find best model then generate a submission
 
-04_z2. [Pipelines](./04_z2_pipeline.ipynb)  
+K04_z1. [Housing Prices Competition](./K04_z1_HousingPricesCompetition.ipynb)  
+Compare DecisionTreeRegressor with RandomForest model - the best is RandomForest then generate a submission
+
+K04_z2. [Pipelines](./K04_z2_pipeline.ipynb)  
 Pipelines are a simple way to keep your data preprocessing and modeling code organized. Specifically, a pipeline bundles preprocessing and modeling steps so you can use the whole bundle as if it were a single step.
 
-04_z3. [XGBoost](./04_z3_xgboost.ipynb)  
+K04_z3. [XGBoost](./K04_z3_xgboost.ipynb)  
 Gradient boosting is a method that goes through cycles to iteratively add models into an ensemble. We use the loss function to fit a new model that will be added to the ensemble. Specifically, we determine model parameters so that adding this new model to the ensemble will reduce the loss.
 
-05\_. [Data Vizualization](./05_data_visualization.ipynb)  
+K05_z0. [Data Vizualization](./K05_z0_data_visualization.ipynb)  
  Seaborn, Line Charts, Custom Styles, Heat Maps
 
-06\_. [Feature Engineering](./06_feature_engineering.ipynb)  
+K05_z1. [Breast Cancer Detection](./K05_z1_breast_cancer_detection.ipynb)  
+Histograms for benign and maligant tumors, KDE plots
+
+K06. [Feature Engineering](./K06_feature_engineering.ipynb)  
 Features, Clustering with K-Means, Principal Component Analysis
 
-07\_. [Data Cleaning](./07_data_cleaning.ipynb)  
-Features, Clustering with K-Means, Principal Component Analysis
+K07. [Data Cleaning](./K07_data_cleaning.ipynb)  
+Minmax_scaling, Normalization, Remove trailing white spaces, fuzzywuzzy closest match
 
-08\_. [Intro to Deep Learning](./08_introDeepLearning.ipynb)  
-Features, Clustering with K-Means, Principal Component Analysis
+K08. [Intro to Deep Learning](./K08_introDeepLearning.ipynb)  
+Activation Layer, relu, Plot
 
-09\_. [KerasGradient](./09_KerasGradient.ipynb)  
-Features, Clustering with K-Means, Principal Component Analysis
+K09. [KerasGradient](./K09_KerasGradient.ipynb)  
+Preprocessor, Transformer, Added loss and optimizer, Plot
 
-10\_. [KerasUnderfitOverfit](./10_KerasUnderfitOverfit.ipynb)  
-Features, Clustering with K-Means, Principal Component Analysis
+K10. [KerasUnderfitOverfit](./K10_KerasUnderfitOverfit.ipynb)  
+Do a "Grouped" split to keep all of an artist's songs in one split or the other - prevents signal leakage. Simple Network - linear model underfit. Added three hidden layers - overfit. Added early stopping callback.
 
-11\_. [BinaryClassification](./11_BinaryClassification.ipynb)  
-Features, Clustering with K-Means, Principal Component Analysis
+K11. [BinaryClassification](./K11_BinaryClassification.ipynb)  
+ In Regression, MAE = distance between the expected outcome and the predicted outcome. In Classification Cross-Entropy = distance between probabilities. Sigmoid activation - covert the real-valued outputs produced by a dense layer into probabilities.
 
 ## Machine Learning Mastery
 
