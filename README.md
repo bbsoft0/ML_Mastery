@@ -13,12 +13,13 @@ The courses structure is as follows:
 
 <!-- TOC -->
 
+- [Python](#python)
 - [Kaggle Courses](#kaggle)
 - [Machine Learning Mastery](#machine-learning-mastery)
 
 <!-- /TOC -->
 
-## Kaggle
+## Python
 
 P01. [Python Basics](./P01_Python_Basics.py)  
 Functions, Lists, Strings and Dictionaries
@@ -37,6 +38,8 @@ Uses numpy pseudorandom number generator to generate random numbers between 1...
 
 P06. [Dictionary](./P06_Dictionary.py)  
 Interactive dictionary - uses data.json and displays information about the words introduced.
+
+## Kaggle
 
 K02. [Intro To Machine Learning](./K02_introML.ipynb)  
  Starts with DecisionTrees then gets to RandomForest which has the best performance
@@ -82,5 +85,38 @@ K11. [BinaryClassification](./K11_BinaryClassification.ipynb)
 
 ## Machine Learning Mastery
 
-001\_. [Probability](./001_Probability.py)  
+M001. [Probability](./M001_Probability.py)  
+ Gaussian Distribution, Bayes, cross entropy H(P, Q), Naive classifier, Log Loss, Brier score
+
+M002. [Statistics](./M002_Statistics.py)  
+ Gaussian Distribution, Bayes, cross entropy H(P, Q), Naive classifier, Log Loss, Brier score
+
+M003. [Linear Algebra](./M003_LinearAlgebra.py)  
+ Gaussian Distribution, Bayes, cross entropy H(P, Q), Naive classifier, Log Loss, Brier score
+
+M004. [Optimization](./M004_Optimization.py)  
+ Gaussian Distribution, Bayes, cross entropy H(P, Q), Naive classifier, Log Loss, Brier score
+
+M005. [Python Machine Learning](./M005_Python_ML.py)  
+ Gaussian Distribution, Bayes, cross entropy H(P, Q), Naive classifier, Log Loss, Brier score
+
+M006. [Python Project Iris](./M006_Python_Project_Iris.py)  
+ Gaussian Distribution, Bayes, cross entropy H(P, Q), Naive classifier, Log Loss, Brier score
+
+M007. [Machine Learning Mini Course](./M007_ML_Mini_Course.py)  
+ Gaussian Distribution, Bayes, cross entropy H(P, Q), Naive classifier, Log Loss, Brier score
+
+M008. [Time Series Forecasting](./M008_Time_Series_Forecasting.py)  
+ Gaussian Distribution, Bayes, cross entropy H(P, Q), Naive classifier, Log Loss, Brier score
+
+M009. [Time Series End To End](./M009_Time_Series_EndToEnd.py)  
+ Gaussian Distribution, Bayes, cross entropy H(P, Q), Naive classifier, Log Loss, Brier score
+
+M010. [Time Series End To End Joker](./M010_Time_Series_EndToEnd_Joker.py)  
+ Gaussian Distribution, Bayes, cross entropy H(P, Q), Naive classifier, Log Loss, Brier score
+
+M011. [Data Preparation](./M011_Data_Preparation.py)  
+ Gaussian Distribution, Bayes, cross entropy H(P, Q), Naive classifier, Log Loss, Brier score
+
+M012. [Gradient Boosting](./M012_Gradient_Boosting.py)  
  Gaussian Distribution, Bayes, cross entropy H(P, Q), Naive classifier, Log Loss, Brier score
