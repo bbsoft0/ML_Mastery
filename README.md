@@ -85,7 +85,7 @@ K11. [BinaryClassification](./K11_BinaryClassification.ipynb)
 
 ## Machine Learning Mastery
 
-<p align="right">[Machine Learning Mastery Notes](./MachineLearningMasteryNotes.txt)  </p>
+M000. [Notes](./MachineLearningMasteryNotes.txt)
 
 M001. [Probability](./M001_Probability.py)  
  Gaussian Distribution, Bayes, cross entropy H(P, Q), Naive classifier, Log Loss, Brier score
