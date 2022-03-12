@@ -105,22 +105,22 @@ M005. [Python Machine Learning](./M005_Python_ML.py)
 Classification and regression trees, DecisionTreeClassifier, line plot, bar chart, histogram, box and whisker plot, scatter plot
 
 M006. [Python Project Iris](./M006_Python_Project_Iris.py)  
- Gaussian Distribution, Bayes, cross entropy H(P, Q), Naive classifier, Log Loss, Brier score
+Box and whisker plots, Histograms, Scatter plot matrix, Split-out validation dataset, Spot Check Algorithms, Make predictions an evaluate them
 
 M007. [Machine Learning Mini Course](./M007_ML_Mini_Course.py)  
- Gaussian Distribution, Bayes, cross entropy H(P, Q), Naive classifier, Log Loss, Brier score
+Pima Indians diabetes, Scatter Plot Matrix, Standardize data (0 mean, 1 stdev), Cross Validation - Evaluate and LogLoss, KNN Regression, Grid Search for Algorithm Tuning, Random Forest Classification, Save Model Using Pickle
 
 M008. [Time Series Forecasting](./M008_Time_Series_Forecasting.py)  
- Gaussian Distribution, Bayes, cross entropy H(P, Q), Naive classifier, Log Loss, Brier score
+Data Visualization, Persistence Forecast Model, Autoregressive Forecast Model, ARIMA Forecast Model,
 
 M009. [Time Series End To End](./M009_Time_Series_EndToEnd.py)  
- Gaussian Distribution, Bayes, cross entropy H(P, Q), Naive classifier, Log Loss, Brier score
+Test Harness, Persistence, Data Analysis, ARIMA Models, Model Validation, Make Prediction, Validate Model
 
 M010. [Time Series End To End Joker](./M010_Time_Series_EndToEnd_Joker.py)  
- Gaussian Distribution, Bayes, cross entropy H(P, Q), Naive classifier, Log Loss, Brier score
+Test Harness, Persistence, Data Analysis, ARIMA Models, Model Validation, Make Prediction, Validate Model
 
 M011. [Data Preparation](./M011_Data_Preparation.py)  
- Gaussian Distribution, Bayes, cross entropy H(P, Q), Naive classifier, Log Loss, Brier score
+Fill Missing Values With Imputation, Select Features With RFE, Scale Data With Normalization, Transform Categories With One-Hot Encoding, Transform Numbers to Categories With kBins, Dimensionality Reduction With PCA, 
 
 M012. [Gradient Boosting](./M012_Gradient_Boosting.py)  
- Gaussian Distribution, Bayes, cross entropy H(P, Q), Naive classifier, Log Loss, Brier score
+Monitor Performance and Early Stopping, Feature Importance with XGBoost, XGBoost Hyperparameter Tuning, 
