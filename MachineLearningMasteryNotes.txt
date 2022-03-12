@@ -1,0 +1,501 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-11-22T21:25:06+02:00
+
+====== MachineLearningMastery ======
+
+--------------------
+**Adjust Mindset**
+Top-down approach is best : we require motivation, excitement, and most importantly, a connection of the topic to tangible results.
+
+**Pick a Process**
+5-Step Systematic Process
+1. Define the Problem
+2. Prepare Data
+3. Spot Check Algorithms
+4. Improve Results
+5. Present Results
+
+**Pick a Tool: **Python
+
+**Practice on Datasets**
+**Build a Portfolio**
+--------------------
+**Applied Machine Learning Process**
+8 Tactics To Combat Imbalanced Training Data
+1) Can You Collect More Data?
+2) Try Changing Your Performance Metric
+Confusion Matrix: A breakdown of predictions into a table showing correct predictions (the diagonal) and the types of incorrect predictions made (what classes incorrect predictions were assigned).
+Precision: A measure of a classifiers exactness.
+Recall: A measure of a classifiers completeness
+F1 Score (or F-score): A weighted average of precision and recall.
+Kappa (or Cohen’s kappa): Classification accuracy normalized by the imbalance of the classes in the data.
+ROC Curves: Like precision and recall, accuracy is divided into sensitivity and specificity and models can be chosen based on the balance thresholds of these values.
+3) Try Resampling Your Dataset
+4) Try Generate Synthetic Samples
+5) Try Different Algorithms
+6) Try Penalized Models
+7) Try a Different Perspective
+8) Try Getting Creative
+--------------------
+**Probability for Machine Learning**
+P(A and B) = P(A given B) * P(B)
+P(A or B) = P(A) + P(B) – P(A and B)
+
+Randomly Sample Gaussian Distribution
+sample = normal(mu, sigma, n)
+P(y | X)  Probability of y given X
+Bayes Theorem: P(A|B) = P(B|A) * P(A) / P(B)
+**Entropy and Cross Entropy**
+Information(x) = -log( p(x) )
+Entropy(X) = -sum(i=1 to K p(K) * log(p(K)))
+CrossEntropy(P, Q) = – sum x in X P(x) * log(Q(x))
+**Naive Classifiers**
+**Probability Scores**
+Log Loss Score:			log_loss(y_true, y_pred)
+Brier Score:				brier_score_loss(y_true, y_pred, pos_label=1)
+--------------------
+**Statistics for Machine Learning**
+Statistics is a subfield of mathematics. It refers to a collection of methods for working with data and using data to answer questions.
+10 examples:
+1. Problem Framing
+2. Data Understanding
+3. Data Cleaning
+4. Data Selection
+5. Data Preparation
+6. Model Evaluation
+7. Model Configuration
+8. Model Selection
+9. Model Presentation
+10. Model Predictions
+Gaussian Distribution and Descriptive Stats
+Correlation Between Variables
+Statistical Hypothesis Tests
+--------------------
+**Linear Algebra**
+Linear algebra is the mathematics of data. Matrices and vectors are the language of data.
+is a branch of mathematics that lets you concisely describe coordinates and interactions of planes in higher dimensions and perform operations on them.
+Numerical Linear Algebra :  application of linear algebra in computers.
+Linear Algebra and Statistics.
+10 Examples of Linear Algebra in Machine Learning:
+1. Dataset and Data Files
+2. Images and Photographs
+3. One-Hot Encoding
+4. Linear Regression
+5. Regularization
+6. Principal Component Analysis
+7. Singular-Value Decomposition
+8. Latent Semantic Analysis
+9. Recommender Systems
+10. Deep Learning
+Linear Algebra for Machine Learning
+Linear Algebra
+Vectors: v = (v1, v2, v3)
+Matrices
+Matrix Types and Operations
+Matrix Factorization: matrix decomposition is a way of reducing a matrix into its constituent parts.
+Singular-Value Decomposition: SVD - matrix decomposition method : A = U . Sigma . V^T
+--------------------
+**Optimization for Machine Learning**
+That applied machine learning is the problem of approximating an unknown underlying mapping function from inputs to outputs.
+Function Optimization: finding optimal candidate solutions composed of numeric input variables
+Function Optimization With SciPy: Optimization involves finding the inputs to an objective function that result in the minimum or maximum output of the function.
+Basin Hopping Optimization in Python
+Gradient Descent Optimization 
+How to Manually Optimize Machine Learning Model Hyperparameters
+XGBoost Hyperparameter Optimization
+--------------------
+**Understand Machine Learning Algorithms**
+**Algorithms Grouped by Learning Style**
+1. Supervised Learning
+Example problems are classification and regression.
+Example algorithms include: Logistic Regression and the Back Propagation Neural Network.
+2. Unsupervised Learning
+Example problems are clustering, dimensionality reduction and association rule learning.
+Example algorithms include: the Apriori algorithm and K-Means.
+3. Semi-Supervised Learning
+Example problems are classification and regression.
+Example algorithms are extensions to other flexible methods that make assumptions about how to model the unlabeled data.
+**Algorithms Grouped By Similarity**
+Regression Algorithms
+* Ordinary Least Squares Regression (OLSR)
+* Linear Regression
+* Logistic Regression
+* Stepwise Regression
+* Multivariate Adaptive Regression Splines (MARS)
+* Locally Estimated Scatterplot Smoothing (LOESS)
+Instance-based Algorithms
+* k-Nearest Neighbor (kNN)
+* Learning Vector Quantization (LVQ)
+* Self-Organizing Map (SOM)
+* Locally Weighted Learning (LWL)
+* Support Vector Machines (SVM)
+Regularization Algorithms
+* Ridge Regression
+* Least Absolute Shrinkage and Selection Operator (LASSO)
+* Elastic Net
+* Least-Angle Regression (LARS)
+Decision Tree Algorithms
+* Classification and Regression Tree (CART)
+* Iterative Dichotomiser 3 (ID3)
+* C4.5 and C5.0 (different versions of a powerful approach)
+* Chi-squared Automatic Interaction Detection (CHAID)
+* Decision Stump
+* M5
+* Conditional Decision Trees
+Bayesian Algorithms
+* Naive Bayes
+* Gaussian Naive Bayes
+* Multinomial Naive Bayes
+* Averaged One-Dependence Estimators (AODE)
+* Bayesian Belief Network (BBN)
+* Bayesian Network (BN)
+Clustering Algorithms
+* k-Means
+* k-Medians
+* Expectation Maximisation (EM)
+* Hierarchical Clustering
+Association Rule Learning Algorithms:Apriori algorithm,Eclat algorithm
+Artificial Neural Network Algorithms
+* Perceptron
+* Multilayer Perceptrons (MLP)
+* Back-Propagation
+* Stochastic Gradient Descent
+* Hopfield Network
+* Radial Basis Function Network (RBFN)
+Deep Learning Algorithms
+* Convolutional Neural Network (CNN)
+* Recurrent Neural Networks (RNNs)
+* Long Short-Term Memory Networks (LSTMs)
+* Stacked Auto-Encoders
+* Deep Boltzmann Machine (DBM)
+* Deep Belief Networks (DBN)
+Dimensionality Reduction Algorithms
+* Principal Component Analysis (PCA)
+* Principal Component Regression (PCR)
+* Partial Least Squares Regression (PLSR)
+* Sammon Mapping
+* Multidimensional Scaling (MDS)
+* Projection Pursuit
+* Linear Discriminant Analysis (LDA)
+* Mixture Discriminant Analysis (MDA)
+* Quadratic Discriminant Analysis (QDA)
+* Flexible Discriminant Analysis (FDA)
+Ensemble Algorithms
+* Boosting
+* Bootstrapped Aggregation (Bagging)
+* AdaBoost
+* Weighted Average (Blending)
+* Stacked Generalization (Stacking)
+* Gradient Boosting Machines (GBM)
+* Gradient Boosted Regression Trees (GBRT)
+* Random Forest
+Other Machine Learning Algorithms:
+Feature selection algorithms,Algorithm accuracy evaluation,Performance measures,Optimization algorithms
+Subfields:
+* Computational intelligence (evolutionary algorithms, etc.)
+* Computer Vision (CV)
+* Natural Language Processing (NLP)
+* Recommender Systems
+* Reinforcement Learning
+* Graphical Models
+**Supervised and Unsupervised Machine Learning Algorithms**
+Supervised: All data is labeled and the algorithms learn to predict the output from the input data.
+Unsupervised: All data is unlabeled and the algorithms learn to inherent structure from the input data.
+Semi-supervised: Some data is labeled but most of it is unlabeled and a mixture of supervised and unsupervised techniques can be used.
+**Bias-Variance Trade-Off**
+The goal of any supervised machine learning algorithm is to achieve low bias and low variance. In turn the algorithm should achieve good prediction performance.
+Linear machine learning algorithms often have a high bias but a low variance.
+Nonlinear machine learning algorithms often have a low bias but a high variance.
+**Overfitting and Underfitting With Machine Learning Algorithms**
+Overfitting refers to a model that models the training data too well.
+Underfitting refers to a model that can neither model the training data nor generalize to new data.
+How To Limit Overfitting:
+1. Use a resampling technique to estimate model accuracy.
+2. Hold back a validation dataset.
+**Linear Regression Algorithm**
+y = B0 + B1 * x
+**Logistic Regression Algorithm**
+Logistic regression is like linear regression in that the goal is to find the values for the coefficients that weight each input variable.
+Logistic function looks like a big S and will transform any value into the range 0 to 1. 
+**Linear Discriminant Analysis Algorithm**
+The representation of LDA is pretty straight forward. It consists of statistical properties of your data, calculated for each class. For a single input variable this includes:
+The mean value for each class.
+The variance calculated across all classes.
+**Classification and Regression Trees**
+Decision tree model is a binary tree
+**Naive Bayes Algorithm**
+From training data
+The probability of each class.
+The conditional probability for each class given each x value.
+**K-Nearest Neighbors Algorithm**
+**Learning Vector Quantization**
+**Support Vector Machines**
+A hyperplane is a line that splits the input variable space. In SVM, a hyperplane is selected to best separate the points in the input variable space by their class, either class 0 or class 1.
+**Bagging and Random Forest**
+**Boosting and AdaBoost**
+--------------------
+**Python Machine Learning**
+**Introduction to Scikit-Learn**
+Example: Classification and Regression Trees
+**Crash Course in Python for Machine Learning Developers**
+Assignment: =  Strings, Numbers, Boolean, No Value - None, 
+Flow Control":"  If-Then-Else, for i in range(10):, while i < 10:, 
+Data Structures: Tuples (readonly) a = (1, 2, 3)
+  Lists: mylist=[1,2,3], mylist.append(4), print("List Length: %d" % len(mylist))
+  Dictionary: mydict = {'a': 1, 'b': 2, 'c': 3}, mydict['a'] = 11, for key in mydict.keys():
+	print(mydict[key])
+  Functions: def mysum(x, y):
+	return x + y
+**NumPy Crash Course**
+Create Array:   import numpy; mylist = [1, 2, 3]; myarray = numpy.array(mylist); print("First row: %s" % myarray[0]); print("Whole col: %s" % myarray[:, 2])
+Arithmetic: print("Addition: %s" % (myarray1 + myarray2)); print("Multiplication: %s" % (myarray1 * myarray2))
+**Matplotlib Crash Course**
+**Pandas Crash Course**
+The key to understanding Pandas for machine learning is understanding the Series and DataFrame data structures.
+Series:  one-dimensional array where the rows and columns can be labeled
+myseries = pandas.Series(myarray, index=rownames)
+DataFrame: a multi-dimensional array where the rows and the columns can be labeled
+mydataframe = pandas.DataFrame(myarray, index=rownames, columns=colnames)
+**Your First Machine Learning Project in Python Step-By-Step**
+--------------------
+**Python Machine Learning Mini-Course**
+--------------------
+**Introduction to Time Series Forecasting (Python)**
+Time Series
+A normal machine learning dataset is a collection of observations.
+observation #1
+observation #2
+observation #3
+A time series is a sequence of observations taken sequentially in time.
+Time #1, observation
+Time #2, observation
+Time #3, observation
+Describing vs. Predicting
+Time Series Analysis
+Time Series Forecasting
+The purpose of time series analysis is generally twofold: to understand or model the stochastic mechanisms that gives rise to an observed series and to predict or forecast the future values of a series based on the history of that series
+**Components of Time Series**
+Level. The baseline value for the series if it were a straight line.
+Trend. The optional and often linear increasing or decreasing behavior of the series over time.
+Seasonality. The optional repeating patterns or cycles of behavior over time.
+Noise. The optional variability in the observations that cannot be explained by the model.
+y = level + trend + seasonality + noise
+Concerns of Forecasting
+Examples of Time Series Forecasting
+**Time Series Forecasting as Supervised Learning**
+Supervised Machine Learning
+Y = f(X)
+Sliding Window For Time Series Data
+Given a sequence of numbers for a time series dataset, we can restructure the data to look like a supervised learning problem. 
+time, measure
+1, 100
+2, 110
+3, 108
+4, 115
+5, 120
+ReOrganized:
+X, y
+?, 100
+100, 110
+110, 108
+108, 115
+115, 120
+120, ?
+Sliding Window With Multivariate Time Series Data
+Sliding Window With Multi-Step Forecasting
+The number of time steps ahead to be forecasted is important.
+It is also a good example to show the burden on the input variables. Specifically, that a supervised model only has X1 to work with in order to predict both y1 and y2.
+Careful thought and experimentation are needed on your problem to find a window width that results in acceptable model performance.
+--------------------
+**Time Series Forecasting with Python 7-Day Mini-Course**
+Lesson 01: Time Series as Supervised Learning
+Lesson 02: Load Time Series Data
+Lesson 03: Data Visualization
+Lesson 04: Persistence Forecast Model
+Lesson 05: Autoregressive Forecast Model
+yhat = b0 + b1*X1
+For example, we can predict the value for the next time step (t+1) given the observations at the last two time steps (t-1 and t-2). As a regression model, this would look as follows:
+X(t+1) = b0 + b1*X(t-1) + b2*X(t-2)
+Lesson 06: ARIMA Forecast Model
+--------------------
+**Data Preparation for Machine Learning**
+Applied Machine Learning Process
+Step 1: Define Problem
+Learning enough about the project to select the framing or framings of the prediction task. For example, is it classification or regression, or some other higher-order problem type?
+This step also involves taking a close look at the data, as well as perhaps exploring the data using summary statistics and data visualization.
+Step 2: Prepare Data
+Data pre-processing techniques generally refer to the addition, deletion, or transformation of training set data.
+Step 3: Evaluate Models
+It requires that you design a robust test harness used to evaluate your models so that the results you get can be trusted and used to select among the models that you have evaluated.For quick and dirty estimates of model performance, or for a very large dataset, a single train-test split of the data may be performed. It is more common to use k-fold cross-validation as the data resampling technique, often with repeats of the process to improve the robustness of the result.
+This step also involves tasks for getting the most out of well-performing models such as hyperparameter tuning and ensembles of models.
+Step 4: Finalize Model
+Once a suite of models has been evaluated, you must choose a model that represents the “solution” to the project.
+Finally, there will likely be tasks related to the productization of the model, such as integrating it into a software project or production system and designing a monitoring and maintenance schedule for the model.
+What Is Data Preparation
+Nevertheless, there are common or standard tasks that you may use or explore during the data preparation step in a machine learning project.
+These tasks include:
+Data Cleaning: Identifying and correcting mistakes or errors in the data.
+Feature Selection: Identifying those input variables that are most relevant to the task.
+Data Transforms: Changing the scale or distribution of variables.
+Feature Engineering: Deriving new variables from available data.
+Dimensionality Reduction: Creating compact projections of the data.
+The broader philosophy of data preparation is to discover how to best expose the underlying structure of the problem to the learning algorithms. This is the guiding light.
+How to Choose Data Preparation Techniques:
+Gather data from the problem domain.
+Discuss the project with subject matter experts.
+Select those variables to be used as inputs and outputs for a predictive model.
+Review the data that has been collected.
+Summarize the collected data using statistical methods.
+Visualize the collected data using plots and charts.
+Model evaluation may involve sub-tasks such as:
+Select a performance metric for evaluating model predictive skill.
+Select a model evaluation procedure.
+Select algorithms to evaluate.
+Tune algorithm hyperparameters.
+Combine predictive models into ensembles.
+--------------------
+**Why Data Preparation Is So Important in Machine Learning**
+What Is Data in Machine Learning
+Row. A single example from the domain, often called an instance or example in machine learning.
+Column. A single property recorded for each example, often called a variable or feature in machine learning.
+Input Variables: Columns in the dataset provided to a model in order to make a prediction.
+Output Variable. Column in the dataset to be predicted by a model.
+Raw Data Must Be Prepared
+1. Machine Learning Algorithms Expect Numbers
+2. Machine Learning Algorithms Have Requirements
+3. Model Performance Depends on Data
+Predictive Modeling Is Mostly Data Preparation
+--------------------
+**Tour of Data Preparation Techniques for Machine Learning**
+1. Common Data Preparation Tasks
+2. Data Cleaning
+3. Feature Selection
+4. Data Transforms
+5. Feature Engineering
+6. Dimensionality Reduction
+--------------------
+**Framework for Data Preparation Techniques in Machine Learning**
+Challenge of Data Preparation
+Framework for Data Preparation
+Data Preparation for Rows
+Data Preparation for Columns
+Data Preparation for Values
+Data Preparation Techniques
+**How to Choose Data Preparation Methods for Machine Learning**
+Strategies for Choosing Data Preparation Techniques
+Approach 1: Manually Specify Data Preparation
+This approach might involve first selecting an algorithm and preparing data specifically for it, or testing a suite of algorithms and ensuring the data preparation methods are tailored to each algorithm.
+Approach 2: Grid Search Data Preparation Methods
+Approach 3: Apply Data Preparation Methods in Parallel
+Data Preparation for Machine Learning (7-Day Mini-Course)
+Lesson 01: Importance of Data Preparation
+Lesson 02: Fill Missing Values With Imputation: use imputer = SimpleImputer(strategy='mean')
+Lesson 03: Select Features With RFE: Feature selection is the process of reducing the number of input variables
+			RFE(estimator=DecisionTreeClassifier(), n_features_to_select=5)
+Lesson 04: Scale Data With Normalization
+Many machine learning algorithms perform better when numerical input variables are scaled to a standard range.
+This includes algorithms that use a weighted sum of the input, like linear regression, and algorithms that use distance measures, like k-nearest neighbors.
+You can normalize your dataset using the scikit-learn object MinMaxScaler.
+Lesson 05: Transform Categories With One-Hot Encoding: encode categorical input variables as numbers - OneHotEncoder class.
+Lesson 06: Transform Numbers to Categories With kBins
+Some machine learning algorithms may prefer or require categorical or ordinal input variables, such as some decision tree and rule-based algorithms.
+The discretization transform is available in the scikit-learn Python machine learning library via the KBinsDiscretizer class.
+Lesson 07: Dimensionality Reduction With PCA
+The number of input variables or features for a dataset is referred to as its dimensionality.
+Dimensionality reduction refers to techniques that reduce the number of input variables in a dataset.
+Although on high-dimensionality statistics, dimensionality reduction techniques are often used for data visualization, these techniques can be used in applied machine learning to simplify a classification or regression dataset in order to better fit a predictive model.
+Perhaps the most popular technique for dimensionality reduction in machine learning is Principal Component Analysis, or PCA for short. This is a technique that comes from the field of linear algebra and can be used as a data preparation technique to create a projection of a dataset prior to fitting a model.
+--------------------
+**XGBoost in Python (Stochastic Gradient Boosting)**
+XGBoost is a highly optimized implementation of gradient boosted decision trees.
+**A Gentle Introduction to the Gradient Boosting Algorithm for Machine Learning**
+AdaBoost the First Boosting Algorithm
+AdaBoost works by weighting the observations, putting more weight on difficult to classify instances and less on those already handled well.
+Generalization of AdaBoost as Gradient Boosting
+How Gradient Boosting Works
+1. A loss function to be optimized.
+2. A weak learner to make predictions.
+3. An additive model to add weak learners to minimize the loss function.
+4. Loss Function
+It must be differentiable, but many standard loss functions are supported and you can define your own.
+For example, regression may use a squared error and classification may use logarithmic loss.
+2. Weak Learner
+Decision trees are used as the weak learner in gradient boosting.
+Specifically regression trees are used that output real values for splits and whose output can be added together, allowing subsequent models outputs to be added and “correct” the residuals in the predictions.
+Trees are constructed in a greedy manner, choosing the best split points based on purity scores like Gini or to minimize the loss.
+3. Additive Model
+Instead of parameters, we have weak learner sub-models or more specifically decision trees. After calculating the loss, to perform the gradient descent procedure, we must add a tree to the model that reduces the loss (i.e. follow the gradient). We do this by parameterizing the tree, then modify the parameters of the tree and move in the right direction by (reducing the residual loss).
+**Improvements to Basic Gradient Boosting**
+1. Tree Constraints: Number of trees, Tree depth, Number of nodes or number of leaves, Number of observations per split, Minimim improvement to loss
+2. Weighted Updates: The contribution of each tree to this sum can be weighted to slow down the learning by the algorithm.
+Similar to a learning rate in stochastic optimization, shrinkage reduces the influence of each individual tree and leaves space for future trees to improve the model.
+3. Stochastic Gradient Boosting
+A big insight into bagging ensembles and random forest was allowing trees to be greedily created from subsamples of the training dataset.
+This same benefit can be used to reduce the correlation between the trees in the sequence in gradient boosting models.
+4. Penalized Gradient Boosting
+Additional constraints can be imposed on the parameterized trees in addition to their structure.
+Classical decision trees like CART are not used as weak learners, instead a modified form called a regression tree is used that has numeric values in the leaf nodes (also called terminal nodes). The values in the leaves of the trees can be called weights in some literature.
+--------------------
+**A Gentle Introduction to XGBoost for Applied Machine Learning**
+XGBoost is an algorithm that has recently been dominating applied machine learning and Kaggle competitions for structured or tabular data.
+XGBoost is an implementation of gradient boosted decision trees designed for speed and performance.
+What is XGBoost?
+XGBoost stands for eXtreme Gradient Boosting.
+XGBoost Features
+Model Features: Gradient Boosting, Stochastic Gradient Boosting, Regularized Gradient Boosting
+System Features: Parallelization, Distributed Computing, Out-of-Core Computing, Cache Optimization
+Algorithm Features: Sparse Aware, Block Structure, Continued Training
+1. XGBoost Execution Speed
+2. XGBoost Model Performance
+sudo pip install xgboost
+**How to Develop Your First XGBoost Model in Python**
+1. Install XGBoost for Use in Python
+2. Problem Description: Predict Onset of Diabetes
+3. Load and Prepare Data
+4. Train the XGBoost Model
+5. Make Predictions with XGBoost Model
+**7 Step Mini-Course to Get Started with XGBoost in Python**
+Lesson 01: Introduction to Gradient Boosting
+Lesson 02: Introduction to XGBoost
+Lesson 03: Develop Your First XGBoost Model
+Lesson 04: Monitor Performance and Early Stopping
+Lesson 05: Feature Importance with XGBoost
+Lesson 06: How to Configure Gradient Boosting
+A number of configuration heuristics were published in the original gradient boosting papers. They can be summarized as:
+Learning rate or shrinkage (**learning_rate** in XGBoost) should be set to 0.1 or lower, and smaller values will require the addition of more trees.
+The depth of trees (**max_depth** in XGBoost) should be configured in the range of 2-to-8, where not much benefit is seen with deeper trees.
+Row sampling (**subsample** in XGBoost) should be configured in the range of 30% to 80% of the training dataset, and compared to a value of 100% for no sampling.
+A good general configuration strategy is as follows:
+Run the default configuration and review plots of the learning curves on the training and validation datasets.
+If the system is overlearning, decrease the learning rate and/or increase the number of trees.
+If the system is underlearning, speed the learning up to be more aggressive by increasing the learning rate and/or decreasing the number of trees.
+Owen Zhang, the former #1 ranked competitor on Kaggle and now CTO at Data Robot proposes an interesting strategy to configure XGBoost.
+He suggests to set the number of trees to a target value such as 100 or 1000, then tune the learning rate to find the best model. This is an efficient strategy for quickly finding a good model.
+Lesson 07: XGBoost Hyperparameter Tuning
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -85,20 +85,24 @@ K11. [BinaryClassification](./K11_BinaryClassification.ipynb)
 
 ## Machine Learning Mastery
 
+<p align="right">[Machine Learning Mastery Notes](./MachineLearningMasteryNotes.txt)  </p>
+
 M001. [Probability](./M001_Probability.py)  
  Gaussian Distribution, Bayes, cross entropy H(P, Q), Naive classifier, Log Loss, Brier score
 
 M002. [Statistics](./M002_Statistics.py)  
- Gaussian Distribution, Bayes, cross entropy H(P, Q), Naive classifier, Log Loss, Brier score
+ Gaussian Distribution and Descriptive Stats, Pearsons correlation,
+Statistical Hypothesis Tests, Nonparametric Statistics
 
 M003. [Linear Algebra](./M003_LinearAlgebra.py)  
- Gaussian Distribution, Bayes, cross entropy H(P, Q), Naive classifier, Log Loss, Brier score
+ Vectors, Multiply vectors, Matrix, Transpose Matrix, Invert Matrix,
+Matrix decomposition, Singular-value decomposition, Eigen decomposition
 
 M004. [Optimization](./M004_Optimization.py)  
- Gaussian Distribution, Bayes, cross entropy H(P, Q), Naive classifier, Log Loss, Brier score
+ Basin Hopping Optimization, Multimodal Optimization With Multiple Global Optima, Gradient Descent, Gradient Descent Graph, Grid Search,
 
 M005. [Python Machine Learning](./M005_Python_ML.py)  
- Gaussian Distribution, Bayes, cross entropy H(P, Q), Naive classifier, Log Loss, Brier score
+Classification and regression trees, DecisionTreeClassifier, line plot, bar chart, histogram, box and whisker plot, scatter plot
 
 M006. [Python Project Iris](./M006_Python_Project_Iris.py)  
  Gaussian Distribution, Bayes, cross entropy H(P, Q), Naive classifier, Log Loss, Brier score
