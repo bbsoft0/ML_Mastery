@@ -83,6 +83,12 @@ Do a "Grouped" split to keep all of an artist's songs in one split or the other 
 K11. [BinaryClassification](./K11_BinaryClassification.ipynb)  
  In Regression, MAE = distance between the expected outcome and the predicted outcome. In Classification Cross-Entropy = distance between probabilities. Sigmoid activation - covert the real-valued outputs produced by a dense layer into probabilities.
 
+K12. [IntroToSQL](./K12_IntroToSQL.ipynb)  
+BigQuery, Stackoverflow, posts_questions INNER JOIN posts_answers
+
+K13. [AdvancedSQL](./K13_AdvancedSQL.ipynb)  
+BigQuery UNION, Analytic Functions, Nested and Repeated Data, Efficient Queries
+
 ## Machine Learning Mastery
 
 M000. [Notes](./MachineLearningMasteryNotes.txt)
@@ -120,7 +126,7 @@ M010. [Time Series End To End Joker](./M010_Time_Series_EndToEnd_Joker.py)
 Test Harness, Persistence, Data Analysis, ARIMA Models, Model Validation, Make Prediction, Validate Model
 
 M011. [Data Preparation](./M011_Data_Preparation.py)  
-Fill Missing Values With Imputation, Select Features With RFE, Scale Data With Normalization, Transform Categories With One-Hot Encoding, Transform Numbers to Categories With kBins, Dimensionality Reduction With PCA, 
+Fill Missing Values With Imputation, Select Features With RFE, Scale Data With Normalization, Transform Categories With One-Hot Encoding, Transform Numbers to Categories With kBins, Dimensionality Reduction With PCA,
 
 M012. [Gradient Boosting](./M012_Gradient_Boosting.py)  
-Monitor Performance and Early Stopping, Feature Importance with XGBoost, XGBoost Hyperparameter Tuning, 
+Monitor Performance and Early Stopping, Feature Importance with XGBoost, XGBoost Hyperparameter Tuning,
