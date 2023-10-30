@@ -9,6 +9,12 @@ The Kaggle datasets are avalable in the inputKaggle folder.
 The Mastery datasets are avalable in the inputMastery folder.
 The courses structure is as follows:
 
+# Libraries
+
+```
+pip install -r requirements.txt
+```
+
 # Complete Courses
 
 <!-- TOC -->

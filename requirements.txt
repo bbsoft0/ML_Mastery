@@ -8,3 +8,9 @@ scipy==1.10.1
 seaborn==0.12.2
 statsmodels==0.13.5
 xgboost==1.7.4
+category_encoders==2.6.3
+optuna==3.4.0
+mlxtend==0.23.0
+chardet=5.2.0
+tensorflow=2.14.0
+```
