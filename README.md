@@ -2,7 +2,7 @@
 
 Machine Learning Mastery - complete courses python files - combined with Kaggle Courses jupyter files.
 
-Kaggle is the most popular platform for Data Science. It has multiple free datasets, projects that you can use for practice, and competitions. It also has a helpful community where you can share your thoughts and learn new things. But the best feature of Kaggle is Kaggle Learn. Even if you don’t know anything about data science, you can learn all the basics from Kaggle Courses and then move on to sharpening your skills by doing projects.
+Kaggle is the most popular platform for Data Science. It has multiple free datasets, projects that you can use for practice, and competitions. It also has a helpful community where you can share your thoughts and learn new things. But the best feature of Kaggle is Kaggle Learn. Even if you donâ€™t know anything about data science, you can learn all the basics from Kaggle Courses and then move on to sharpening your skills by doing projects.
 
 In this repository, the Kaggle learn course tutorial and excerses nootbooks(.ipynb) are available which I have done and earned completion certificates.
 The Kaggle datasets are avalable in the inputKaggle folder.
@@ -44,6 +44,9 @@ Uses numpy pseudorandom number generator to generate random numbers between 1...
 
 P06. [Dictionary](./P06_Dictionary.py)  
 Interactive dictionary - uses data.json and displays information about the words introduced.
+It has similarities with how Large Language Models (LLMs) work : data lookup, fuzzy matching, and user interaction.
+LLMs are of course more powerfull : use neural network to represent text (not a json file), can find patterns and reason over the input (not just retrieving data)
+are scalable and can generalize beyond its knowledge base.
 
 ## Kaggle
 
